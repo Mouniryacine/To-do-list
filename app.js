@@ -157,7 +157,7 @@ function deletall() {
 //   for (var i = 1; i < tableau.rows.length; i++) {
 //     tableau.deleteRow(1);
 //   }
-// }
+
 
 function saveff() {
   let tableau = document.getElementsByTagName("table")[0];
