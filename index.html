@@ -1,40 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>to-do list</title>
     <style>
-        /* table, th, td {
+      /* table, th, td {
          border: 1px solid black;
         } */
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="cntnr">
-        <div class="addtodo">
-            <h4>ADD A TASK :  </h4>
-            <section class="inpt">
-                <input id="inptadd" type="text" placeholder="    what do you want to do today" onkeyup="" >
-                
-                <input id="inptaddh" type="time" placeholder="hour" >
-                
-            </section>
-            
-            <button id="btnadd" type="submit" onclick="add_row_from_click()"> ADD TASK</button>
-        </div>
-        <div class="exst-todos">
-            
-            <table id="tbl">
-                <tr>
-                    <th id="h111">TODAY'S TASKS :</th>
-                    <th>Hour</th>
-                    <th>Done</th>
-                    <th>Delet</th>
-                </tr>
-                <!-- <tr>
+      <div class="addtodo">
+        <h4>ADD A TASK :</h4>
+        <section class="inpt">
+          <input
+            id="inptadd"
+            type="text"
+            placeholder="    what do you want to do today"
+            onkeyup=""
+          />
+
+          <input id="inptaddh" type="time" placeholder="hour" />
+        </section>
+
+        <button id="btnadd" type="submit" onclick="add_row_from_click()">
+          ADD TASK
+        </button>
+      </div>
+      <div class="exst-todos">
+        <table id="tbl">
+          <tr>
+            <th id="h111">TODAY'S TASKS :</th>
+            <th>Hour</th>
+            <th>Done</th>
+            <th>Delet</th>
+          </tr>
+          <!-- <tr>
                     <td>do a weather app</td>
                     <td>15;05</td>
                     <td><input type="checkbox" name="done" class="chk"></td>
@@ -53,22 +58,20 @@
                     <td><input type="checkbox" name="done" class="chk"></td>
                     <td><button class="dlt">DELET</button></td>
                 </tr> -->
-            </table>
-           
-        </div>
-        <table id="tbl1">
-            <tr>
-                <th id="quota" style="color: white ;">“Lost time is never found again.” – Benjamin Franklin</th>
-                <th>tasks done :</th>
-                <th id="dnn">5 / 6</th>
-                <th><button class="dlt save" onclick="saveff()">SAVE</button></th>
-                
-            </tr>
-
         </table>
-        
+      </div>
+      <table id="tbl1">
+        <tr>
+          <th id="quota" style="color: white">
+            “Lost time is never found again.” – Benjamin Franklin
+          </th>
+          <th>tasks done :</th>
+          <th id="dnn">5 / 6</th>
+          <th><button class="dlt save" onclick="deletall()">DELET ALL</button></th>
+        </tr>
+      </table>
     </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
